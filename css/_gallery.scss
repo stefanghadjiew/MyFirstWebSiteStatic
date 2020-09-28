@@ -1,0 +1,63 @@
+.gallery-wrapper {
+    background-color: white;
+    display:none;
+    padding:2.5% 0 2.5%;
+}
+
+.second-grid {
+    grid-template-columns: repeat(3,32.5%);
+    grid-template-rows: repeat(12, 7.25% );
+    column-gap: 1%;
+    row-gap: 1%;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+.home-page {
+    font-family: 'Krona One';
+    text-align: center;
+    padding-bottom: 3vh;
+
+    a {
+        text-decoration: none;
+        transition: 0.5s;
+
+    i {
+        color: black;
+    }
+
+
+    .black{
+        color: black;
+        transition: 0.5s;
+        }
+    
+    .orange {
+        color: $primary-color;
+        }
+
+    &:hover {
+        .black {
+            color: $primary-color;
+        }
+
+        .orange {
+            color: black;
+        }
+
+        i {
+            color: $primary-color;
+        }
+    }    
+    }
+
+}
+

@@ -1,0 +1,135 @@
+@import '_resets';
+@import '_config';
+@import '_keyframes';
+@import '_mixins';
+@import '_collecion-content'; 
+@import '_titles';
+@import '_header';
+@import 'section-first';
+@import 'section-second'; 
+@import 'section-third';
+@import 'section-reviews';
+@import 'section-toughness';
+@import 'section-being-tested';
+@import 'section-final';
+@import '_log-in-form';
+@import '_footer';
+@import 'search-div';
+@import '_gallery';
+@import '_about-us';
+@import '_media';
+
+
+
+
+
+body {
+    font-family: 'Dosis',sans-serif;
+    h1 {
+        font-size: $title-font;
+    }
+    
+    p {
+        font-size: $paragraph-font;
+    }
+
+    a {
+        font-size: $button-font;
+    }
+}
+
+section:nth-child(2n) {
+    @include whiteSpace;
+    @include title;
+    background-color: $background-color;
+}
+
+.btn {
+    font-family: 'Anton';
+    position: relative;
+    padding: 1vh 1.5vw;
+    text-decoration: none;
+    color: $primary-color;
+    border:1px solid $primary-color;
+    border-radius: 4px; 
+    transition: all 0.5s;
+    z-index: 1;
+    
+    &::before{
+        border-radius: 4px;
+        background:$primary-color;
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 0;
+        transform: translate(-50%,-50%);
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+    
+    &:hover {
+        color: white;
+        
+        &:hover::before {
+            height: 100%;
+            transition: all 0.5s;
+        } 
+    }
+    
+}
+
+.bottom-border {
+    background-color: $primary-color;
+    display: inline-block;
+    width: 20vw;
+    height: 0.2rem;
+}
+
+
+@media only screen and (max-width:767px) {
+    .btn {
+        padding: 0.5vh 0.75vw;
+    }
+}
+
+/*  ===================================================
+    CLASSES AND STYLING FOR JS 
+    =================================================== */
+
+
+
+.hide-body {
+    overflow: hidden ;
+    position: relative;
+}
+
+.log-in-div {
+    position: fixed;
+    z-index: 1002;
+    height: 100vh;
+    width: 0;
+    background-color: rgba(black , 0.6);
+    overflow: scroll;
+    transition: all 1s;
+}
+
+.log-in-div-show {
+    width: 100%;
+    height: 100%;
+    animation-name: appearDiv;
+    animation-duration: 1s;
+}
+
+.headerBackground {
+    background-color: black;
+}
+
+.cart-grid {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(10,9%);
+    column-gap: 1%;
+    row-gap: 5%;
+}

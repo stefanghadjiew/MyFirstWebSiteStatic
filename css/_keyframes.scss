@@ -1,0 +1,108 @@
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+ 
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(-30px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform:translateY(0)
+    }
+}
+
+@keyframes disappearBottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(-30px);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform:translateY(200px)
+    }
+}
+
+/* @keyframes firstLi {
+    0% {top: 0; left: 0;}
+    25% {top:0; left: 50%;}
+    50% {top:0; left: 100%;}
+    75% {top: 0; left: 50%}
+    100% {top:0; left: 0;}
+}
+@keyframes secondtLi {
+    0% {top: 0; left: 0;}
+    25% {top:50%; left: 0%;}
+    50% {top:100%; left: 0;}
+    75% {top: 50%; left: 0}
+    100% {top:0; left: 0;}
+} */
+  
+
+@keyframes appearDiv {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+@keyframes handShake {
+    0%{transform: translateY(20px);}
+    20%{transform: translateY(0px);}
+    40%{transform: translateY(20px);}
+    60%{transform: translateY(0px);}
+    80%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
