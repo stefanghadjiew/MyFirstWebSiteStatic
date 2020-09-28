@@ -346,7 +346,7 @@ formReg.addEventListener('submit', async (e) => {
         email.value = '';
         password.value = '';
         repeatPassword.value = '';
-        swapLogRegister();
+        swapRegisterLog();
     } else {
         return
     }
