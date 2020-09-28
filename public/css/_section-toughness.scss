@@ -1,0 +1,41 @@
+.toughness {
+    padding-bottom: 0 !important;
+}
+
+.toughness-paragraph {
+    margin-top:10vh;
+
+    p {
+        @include smallWhiteSpace;
+        }
+}
+
+
+.toughness-imgs-wrapper {
+    display: flex;
+    
+    .toughness-img {
+       width: 33.3%;
+        overflow: hidden;
+        
+        img {
+            @include imgCover;
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+    .first p { 
+        @include smallWhiteSpace;
+    }
+
+    .btns-wrapper {
+        @include flex;
+        i {
+            font-size: $paragraph-font !important;
+        } 
+    }
+        
+    
+
+
+
+

@@ -1,0 +1,109 @@
+.footer-wrapper {
+    background-color:$footer-background;
+    height: 20vh;
+    display: grid;
+    grid-template-columns:45% 10% 45% ;
+    grid-template-areas:    "menu  icon contact"
+}
+ 
+    .footer-social-icons {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        @include flex;
+        flex-direction: column;
+        grid-area: icon;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+    
+    
+    .social>a {
+        cursor: pointer;
+        color:rgba($background-color,0.7);
+        outline: none;
+        text-decoration: none;
+        border: none;
+    }
+    
+    .span-facebook:hover {
+        color: #1877f2;
+        transition: color 0.5s;
+    }
+    
+    .span-twitter:hover {
+        color: #1da1f2;
+        transition: color 0.5s;
+    }
+    
+  
+    .span-instagram:hover {
+        color: #c32aa3;
+        transition: color 0.5s;
+    }
+    
+    .span-linkedin:hover {
+        color: #007bb5;
+        transition: color 0.5s;
+    }
+    
+    
+    .footer-nav-wrapper {
+        color:$footer-text;
+        text-align: center;
+        grid-area:menu ;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    
+    .footer-nav {
+        list-style: none;
+        @include flex;
+
+        li:hover {
+            cursor: pointer;
+            color: $background-color;
+            transition: all 0.5s;
+        }
+    }
+
+    .contact-us {
+        grid-area: contact;
+        text-align: center;
+        font-size: $paragraph-font;
+        margin: auto 0;
+       
+        input {
+            outline: none;
+            border: none;
+            height: 4.5vh;
+            width:70% ;
+            transition: all 0.5s;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        input[type=email]:focus::placeholder {
+            transform: translateX(-8vw);
+            transition: transform 0.5s;
+        }
+
+       button {
+           @include resetsBtn;
+            height: 4.5vh;
+            padding: 0 10px;
+            border: 1px solid $primary-color;
+            background-color: $footer-background;
+            color:$primary-color;
+            
+            &:hover {
+               color: white;
+               background-color: $primary-color;
+               transition: all 0.5s;
+            }
+        }
+    }
+
+   

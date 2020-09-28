@@ -1,0 +1,44 @@
+
+.search-div { 
+    display: none;
+    text-align: center;
+    margin-bottom: 2.5vh;
+    background-color: white;
+
+    &>input {
+        font-size: $paragraph-font;
+        margin-bottom: 10vh;
+        border: none;
+        border-bottom: 1px solid $primary-color;
+        height: 5vh;
+        width: 50vw;
+        outline: 0;
+
+        &::placeholder {
+            font-size:$paragraph-font;
+        } 
+    }
+
+    &>button {
+       @include resetsBtn;
+
+        &:hover {
+            color:$primary-color;
+        }
+    }
+}
+
+.big-close-btn {
+    display: inline-block;
+    position: relative;
+    left:40vw;
+    top:5vh;
+
+    &>button {
+       @include resetsBtn;
+    
+        &:hover {
+            color:$primary-color;
+        }
+    }
+}

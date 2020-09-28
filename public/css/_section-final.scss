@@ -1,0 +1,12 @@
+h3 {
+    margin-top: 10vh;
+}
+
+.final-words-img {
+    height: 75vh;
+    margin-top: 10vh;
+
+    img {
+      @include imgCover;
+     }
+}

@@ -1,0 +1,85 @@
+.title {
+    @include whiteSpace;
+    font-family: 'Dancing Script', sans-serif;
+}
+    
+.image-wrapper {
+        display: inline-block;
+        width: 20vw;
+            
+        img {
+            width: 100%;
+        }
+}
+
+
+.grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    grid-template-rows: repeat(3,33.3%);
+
+
+
+    .grid-item {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        align-items: center;
+        transform: scale(1);
+        transition: all 0.5s;
+        
+        
+
+        &:hover {
+            
+            transform: scale(0.85);
+            & img {
+                filter: brightness(40%);
+            }
+
+            
+        }
+
+        &:hover .grid-btn-wrapper {
+            opacity: 1;
+            transform: scale(0.85);
+            transition: all 0.5s;
+        }
+
+        &:hover>p {
+            opacity: 1;
+            color: white;
+            transform: scale(0.85);
+            transition: all 0.5s;
+        }
+    }
+
+    p {
+        top: 0;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+    img {
+        @include imgCover;
+        transition: all 0.5s;
+    }
+
+    .grid-btn-wrapper {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .grid-item-btn {
+        font-family: 'Krona One';
+        background-color: white;
+        width: 50%;
+        }
+}

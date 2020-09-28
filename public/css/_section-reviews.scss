@@ -1,0 +1,43 @@
+.reviews {
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), 
+    url("../images/crowded.jpg");
+   @include BackgroundCoverFixed;
+
+   .reviews-title {
+        @include whiteSpace;
+        @include title; 
+        color: $background-color;
+    }
+}
+
+
+.person-wrapper {
+   @include flex;
+   padding-bottom: 10vh;
+
+   .person {
+    font-size: $paragraph-font;
+    color: $background-color;
+    width: 30%;
+    
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 5vh;
+    }
+
+    blockquote {
+        font-family: 'Dancing Script', sans-serif;
+        
+        &::before{
+            content:"\0022";
+            font-size:4rem ;
+            }
+    }
+
+    }
+}
+
+
+

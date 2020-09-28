@@ -1,0 +1,169 @@
+/* ===================================================
+   0 to 767 px 
+   =================================================== */
+@media only screen  and (max-width : 767px) {
+
+
+.cart-grid {
+    grid-template-columns: repeat(4,24.25%) !important;
+}
+
+
+.final>h3 {
+    font-size: .75rem;
+}
+
+//SECTION-THIRD /CITIES-WRAPPER DIV
+.cities {
+    display: block;
+    margin: 0;
+    h3 {
+        margin-top:5vh;
+    }
+}
+
+//SECTION REVIEWS
+.person-wrapper {
+    display: block;
+    text-align: center;
+    margin: 0 5vw;
+
+    .person {
+        width: 100%;
+    }
+}
+
+
+//SECTION TOUGHNESS /TOUGHNESS-IMAGES
+.toughness-imgs-wrapper {
+    display: block;
+    .toughness-img {
+        width: 100%;
+    }
+}
+
+//SECTION TESTED-IMAGES
+.tested-wrapper {
+    display: block;
+    margin: 0 5vw;
+    
+    .being-tested-img {
+        width: 100% ;
+    }
+
+    .being-tested-paragraph {
+        width: 100% ;
+        margin-top: 2.5vh;
+    }
+} 
+
+.alone-p {
+    @include smallWhiteSpace;
+}
+
+.being-created {
+    display: block ;
+    margin: 0 5vh 5vw ;
+
+    .being-created-img {
+        width: 100% ;
+    }
+
+    .being-created-paragraph {
+        width: 100% ;
+        margin-bottom: 2.5vh ;
+    }
+}
+
+
+//SECTION FINAL
+.final-words-img {
+    width: 100%;
+    height: 50% ;
+}
+
+
+//FOOTER 
+.footer-wrapper {
+    height: 30vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .footer-social-icons {
+        flex-direction: row;
+    }
+    .footer-nav-wrapper {
+        margin: 0;
+    }
+    .contact-us {
+        margin: 0;
+    }
+}
+}
+
+
+/* ===================================================
+   768 to 1200 px 
+   =================================================== */
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+
+.cart-grid {
+    grid-template-columns: repeat(4,24.25%) !important;
+}
+
+.sign-in {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+  
+}
+
+ .cities {
+    grid-template-columns: repeat(2,50%);
+} 
+
+/* ===================================================
+   1201 to 1920px 
+   =================================================== */
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+    
+
+    .sign-in {
+        
+        display: flex;
+        width: 70%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+   .cities {
+    grid-template-columns: repeat(4,22.5%);
+}  
+ 
+}
+
+/* ===================================================
+    4k
+   =================================================== */
+   @media only screen and (min-width: 2160px) and (max-width: 3840px) {
+   body {
+       font-size: 50px;
+   }
+
+   .text {
+       font-size: 4rem;
+   }
+
+   .presentation {
+       font-size: 3rem;
+   }
+
+   .social>button {
+       font-size: 2rem;
+   }
+   }

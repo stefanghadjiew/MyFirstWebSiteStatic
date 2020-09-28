@@ -1,0 +1,151 @@
+
+.log-in-container {
+    display: none;
+    z-index: 9999;
+    background-color: white;
+    border: 1px solid $primary-color;
+    border-radius: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in {
+    font-size:$paragraph-font;
+    text-align: center;
+    color:$primary-color;
+
+    &>input {
+        border: none;
+        text-align: center;
+        height: 5vh;
+        width: 50vw;
+        outline: 1px solid $primary-color;
+        border-radius: 10px;
+        margin-bottom: 1.5vh;
+        transition: all 0.5s;
+        opacity: 0.7;
+        
+
+        &:hover {
+            font-size: 120%; 
+            transform: translateY(-1vh);
+            opacity: 1;
+            
+        }
+
+        &:focus {
+            font-size: 120%; 
+            transform: translateY(-1vh);
+            opacity: 1;
+            
+        }
+    }
+
+    &>input[type=text]:focus {
+        text-align: center;
+    }
+
+    
+    &>input[type=text]:not(:focus)::placeholder {
+        text-align: center;
+    }
+
+    &>input[type=text]:focus::placeholder {
+        transform: translateX(-8vw);
+        transition: transform 0.5s;
+    }
+
+    &>input[type=email]:focus {
+        text-align: center;
+    }
+
+    &>input[type=email]:not(:focus)::placeholder {
+        text-align: center;
+    }
+
+    &>input[type=email]:focus::placeholder {
+        transform: translateX(-8vw);
+        transition: transform 0.5s;
+    }
+
+    &>input[type=password]:focus {
+        text-align: center;
+    }
+
+    &>input[type=password]:not(:focus)::placeholder {
+        text-align: center;
+    }
+
+    &>input[type=password]:focus::placeholder {
+        transform: translateX(-10vw);
+        transition: transform 0.5s;
+    }
+
+    &>button {
+        width: 25vw;
+        margin-bottom: 0.5rem;
+        outline: none;
+        background: 0;
+        font-size:$title-font;
+        padding: 1vh 1.5vw;
+        text-decoration: none;
+        color: $primary-color;
+        transition: color 0.5s;
+        border: 1px solid $primary-color;
+        border-radius: 0.5rem;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: $primary-color;
+            color: white;
+            transition: 0.5s;
+        }
+
+        &>input {
+            border: none;
+            background: none;
+            outline: none;
+        }
+    }
+}
+
+.checkbox {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    span {
+        text-decoration: underline;
+    }
+
+    input {
+        margin-right: 2.5vw;
+        width: auto;
+        height: auto;
+        }
+}
+
+.user-img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 15vh;
+    width: 15vw;
+
+    img {
+        width: 100%;
+       }
+}
+
+
+#log_in,#register_span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#form_register {
+    opacity: 0;
+    pointer-events: none;
+
+    & p {
+        margin-bottom:2.5vh;
+    } 
+}
