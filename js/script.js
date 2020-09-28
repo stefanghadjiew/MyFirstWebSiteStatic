@@ -336,8 +336,8 @@ formReg.addEventListener('submit', async (e) => {
                 body: JSON.stringify(userInput)
             })
             const userInfo = await response.json()
-           
-            swapLogRegister();
+            alert(`${userInfo.firstName} Succesfully registered` )
+            
         } catch(err) {
            alert(err.message);
         }
@@ -346,6 +346,7 @@ formReg.addEventListener('submit', async (e) => {
         email.value = '';
         password.value = '';
         repeatPassword.value = '';
+        swapLogRegister();
     } else {
         return
     }
