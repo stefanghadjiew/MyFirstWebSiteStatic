@@ -336,7 +336,7 @@ formReg.addEventListener('submit', async (e) => {
                 body: JSON.stringify(userInput)
             })
             const userInfo = await response.json()
-            alert(`${userInfo.firstName} Succesfully registered` )
+            alert(`${userInfo.firstName} Succesfully registered`)
             swapRegisterLog();
         } catch(err) {
            alert(err.message);
