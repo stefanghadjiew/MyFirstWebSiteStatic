@@ -48,6 +48,8 @@ async function checkBagProducts() {
   
 }
 
+checkBagProducts()
+
 
 logInBtn.addEventListener('click', (e) => {
     e.preventDefault()
@@ -386,6 +388,7 @@ formLog.addEventListener("submit", async (e) => {
             localStorage.setItem("userId",userInfo.id);
             logInBtn.innerHTML = "Log Out"
             closeClose(signUpDiv, "animate__fadeOutRight", "animate__fadeInRight")
+            checkBagProducts()
         }
         emailLog.value = '';
         passwordLog.value = '';
